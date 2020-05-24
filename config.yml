@@ -1,0 +1,18 @@
+title: gaudi-informatie-vragen
+description: >-
+  We zijn aanwezig dinsdagavond 26 mei tussen 19.30 en 20.00 uur om antwoord te
+  geven op vragen over een eventuele overstap naar onze school.
+template:
+  repo: gaudi-informatie-vragen-template
+  name: gaudi-informatie-vragen
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
